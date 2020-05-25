@@ -9,18 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".Registro"
-            android:label="@string/title_activity_registro"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".MenuOpciones" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".NuevoUsuario"></activity>
+        <activity android:name=".Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Registro"
+            android:label="@string/title_activity_registro"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MenuOpciones" />
+        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>
