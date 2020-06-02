@@ -2,18 +2,28 @@ package com.alejo.g500;
 
 import android.os.Bundle;
 
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
 
 public class Registro extends AppCompatActivity {
-    EditText cajaGasolinaIncial, cajaGasolinaFinal;
-    Button btnGuardar;
+    EditText cajaGasolinaIncialBOMBA1_DES1, cajaGasolinaFinalBOMBA1_DES1;
+    EditText cajaGasolinaIncialBOMBA2_DES1, cajaGasolinaFinalBOMBA2_DES1;
+    EditText cajaGasolinaIncialBOMBA1_DES2, cajaGasolinaFinalBOMBA1_DES2;
+    EditText cajaGasolinaIncialBOMBA2_DES2, cajaGasolinaFinalBOMBA2_DES2;
+    EditText cajaGasolinaIncialBOMBA1_DES3, cajaGasolinaFinalBOMBA1_DES3;
+    EditText cajaGasolinaIncialBOMBA2_DES3, cajaGasolinaFinalBOMBA2_DES3;
+    EditText cajaGasolinaIncialBOMBA1_DES4, cajaGasolinaFinalBOMBA1_DES4;
+    EditText cajaGasolinaIncialBOMBA2_DES4, cajaGasolinaFinalBOMBA2_DES4;
+
+
+    Button btnGuardarIncialBOMBA1_DES1, btnGuardarFinalBOMBA1_DES1;
+    Button btnGuardarIncialBOMBA2_DES1, btnGuardarFinalBOMBA2_DES1;
+    Button btnGuardarIncialBOMBA1_DES2, btnGuardarFinalBOMBA1_DES2;
+    Button btnGuardarIncialBOMBA2_DES2, btnGuardarFinalBOMBA2_DES2;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,33 +33,64 @@ public class Registro extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-      //  inicializarElementos();
+        inicializarElementos();
         //clicks();
 
     }
 
     private void clicks() {
-        btnGuardar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String gInicial = cajaGasolinaIncial.getText().toString().trim();
-                String gFinal = cajaGasolinaFinal.getText().toString().trim();
-
-                if (gInicial.isEmpty() || gFinal.isEmpty()) {
-                    Toast.makeText(Registro.this, "Algún dato faltante", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(Registro.this, "Información almacenada!", Toast.LENGTH_SHORT).show();
-                    btnGuardar.setEnabled(false);
-                    cajaGasolinaIncial.setEnabled(false);
-                    cajaGasolinaFinal.setEnabled(false);
-                }
-            }
-        });
 
 
     }
 
     private void inicializarElementos() {
+        //CAJAS DE TEXTO
+        cajaGasolinaIncialBOMBA1_DES1 = findViewById(R.id.gasolinaInicialB1D1);
+        cajaGasolinaFinalBOMBA1_DES1 = findViewById(R.id.gasolinaFinalB1D1);
+        cajaGasolinaIncialBOMBA2_DES1 = findViewById(R.id.gasolinaInicialB2D1);
+        cajaGasolinaFinalBOMBA2_DES1 = findViewById(R.id.gasolinaFinalB2D1);
+        cajaGasolinaIncialBOMBA1_DES2 = findViewById(R.id.gasolinaInicialB1D2);
+        cajaGasolinaFinalBOMBA1_DES2 = findViewById(R.id.gasolinaFinalB1D2);
+        cajaGasolinaIncialBOMBA2_DES2 = findViewById(R.id.gasolinaInicialB2D2);
+        cajaGasolinaFinalBOMBA2_DES2 = findViewById(R.id.gasolinaFinalB2D2);
+        cajaGasolinaIncialBOMBA1_DES3 = findViewById(R.id.gasolinaInicialB1D3);
+        cajaGasolinaFinalBOMBA1_DES3 = findViewById(R.id.gasolinaFinalB1D3);
+        cajaGasolinaIncialBOMBA2_DES3 = findViewById(R.id.gasolinaInicialB2D3);
+        cajaGasolinaFinalBOMBA2_DES3 = findViewById(R.id.gasolinaFinalB2D3);
+        cajaGasolinaIncialBOMBA1_DES4 = findViewById(R.id.gasolinaInicialB1D4);
+        cajaGasolinaFinalBOMBA1_DES4 = findViewById(R.id.gasolinaFinalB1D4);
+        cajaGasolinaIncialBOMBA2_DES4 = findViewById(R.id.gasolinaInicialB2D4);
+        cajaGasolinaFinalBOMBA2_DES4 = findViewById(R.id.gasolinaFinalB2D4);
+
+        //BOTONES
+        btnGuardarIncialBOMBA1_DES1 = findViewById(R.id.btnGuardarIncialBOMBA1_DES1);
+        btnGuardarFinalBOMBA1_DES1 = findViewById(R.id.btnGuardarFinalBOMBA1_DES1);
+        btnGuardarIncialBOMBA2_DES1 = findViewById(R.id.btnGuardarIncialBOMBA2_DES1);
+        btnGuardarFinalBOMBA2_DES1 = findViewById(R.id.btnGuardarFinalBOMBA2_DES1);
+        btnGuardarIncialBOMBA1_DES2 = findViewById(R.id.btnGuardarIncialBOMBA1_DES2);
+        btnGuardarFinalBOMBA1_DES2 = findViewById(R.id.btnGuardarFinalBOMBA1_DES2);
+
+
+
+
+
+        //VALORES EN CAJAS DE TEXTO
+        cajaGasolinaIncialBOMBA1_DES1.setText("1");
+        cajaGasolinaFinalBOMBA1_DES1.setText("1");
+        cajaGasolinaIncialBOMBA2_DES1.setText("2");
+        cajaGasolinaFinalBOMBA2_DES1.setText("2");
+        cajaGasolinaIncialBOMBA1_DES2.setText("3");
+        cajaGasolinaFinalBOMBA1_DES2.setText("3");
+        cajaGasolinaIncialBOMBA2_DES2.setText("4");
+        cajaGasolinaFinalBOMBA2_DES2.setText("4");
+        cajaGasolinaIncialBOMBA1_DES3.setText("5");
+        cajaGasolinaFinalBOMBA1_DES3.setText("5");
+        cajaGasolinaIncialBOMBA2_DES3.setText("6");
+        cajaGasolinaFinalBOMBA2_DES3.setText("6");
+        cajaGasolinaIncialBOMBA1_DES4.setText("7");
+        cajaGasolinaFinalBOMBA1_DES4.setText("7");
+        cajaGasolinaIncialBOMBA2_DES4.setText("8");
+        cajaGasolinaFinalBOMBA2_DES4.setText("8");
 
 
     }

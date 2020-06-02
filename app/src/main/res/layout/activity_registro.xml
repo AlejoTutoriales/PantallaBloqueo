@@ -32,7 +32,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical" >
+                android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -78,7 +78,7 @@
                                         android:inputType="textPersonName|numberDecimal" />
 
                                     <Button
-                                        android:id="@+id/btnGuardarInicialB1D1"
+                                        android:id="@+id/btnGuardarIncialBOMBA1_DES1"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_weight="1"
@@ -95,7 +95,7 @@
                                     android:orientation="horizontal">
 
                                     <EditText
-                                        android:id="@+id/gasolinaFinaB1D1"
+                                        android:id="@+id/gasolinaFinalB1D1"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_weight="1"
@@ -104,7 +104,7 @@
                                         android:inputType="textPersonName|numberDecimal" />
 
                                     <Button
-                                        android:id="@+id/btnGuardarFinalB1D1"
+                                        android:id="@+id/btnGuardarFinalBOMBA1_DES1"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_weight="1"
@@ -143,7 +143,7 @@
                                         android:inputType="textPersonName|numberDecimal" />
 
                                     <Button
-                                        android:id="@+id/btnGuardarInicialB2D1"
+                                        android:id="@+id/btnGuardarIncialBOMBA2_DES1"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_weight="1"
@@ -160,7 +160,7 @@
                                     android:orientation="horizontal">
 
                                     <EditText
-                                        android:id="@+id/gasolinaFinaB2D1"
+                                        android:id="@+id/gasolinaFinalB2D1"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_weight="1"
@@ -169,7 +169,7 @@
                                         android:inputType="textPersonName|numberDecimal" />
 
                                     <Button
-                                        android:id="@+id/btnGuardarFinalB2D1"
+                                        android:id="@+id/btnGuardarFinalBOMBA2_DES1"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_weight="1"
@@ -229,7 +229,7 @@
                                         android:inputType="textPersonName|numberDecimal" />
 
                                     <Button
-                                        android:id="@+id/btnGuardarInicialB1D2"
+                                        android:id="@+id/btnGuardarIncialBOMBA1_DES2"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_weight="1"
@@ -255,7 +255,7 @@
                                         android:inputType="textPersonName|numberDecimal" />
 
                                     <Button
-                                        android:id="@+id/btnGuardarFinalB1D2"
+                                        android:id="@+id/btnGuardarFinalBOMBA1_DES2"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_weight="1"
@@ -285,7 +285,7 @@
                                     android:orientation="horizontal">
 
                                     <EditText
-                                        android:id="@+id/cajaGasolinaInicial"
+                                        android:id="@+id/gasolinaInicialB2D2"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_weight="1"
@@ -294,7 +294,7 @@
                                         android:inputType="textPersonName|numberDecimal" />
 
                                     <Button
-                                        android:id="@+id/btnGuardarDatos2"
+                                        android:id="@+id/btnGuardarIncialBOMBA2_DES2"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_weight="1"
@@ -311,7 +311,7 @@
                                     android:orientation="horizontal">
 
                                     <EditText
-                                        android:id="@+id/cajaGasolinaFinal"
+                                        android:id="@+id/gasolinaFinalB2D2"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_weight="1"
@@ -320,7 +320,6 @@
                                         android:inputType="textPersonName|numberDecimal" />
 
                                     <Button
-                                        android:id="@+id/btnGuardarDatos3"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_weight="1"
@@ -371,7 +370,7 @@
                                     android:orientation="horizontal">
 
                                     <EditText
-                                        android:id="@+id/cajaGasolinaInicial"
+                                        android:id="@+id/gasolinaInicialB1D3"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_weight="1"
@@ -380,7 +379,6 @@
                                         android:inputType="textPersonName|numberDecimal" />
 
                                     <Button
-                                        android:id="@+id/btnGuardarDatos2"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_weight="1"
@@ -397,7 +395,7 @@
                                     android:orientation="horizontal">
 
                                     <EditText
-                                        android:id="@+id/cajaGasolinaFinal"
+                                        android:id="@+id/gasolinaFinalB1D3"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_weight="1"
@@ -406,7 +404,6 @@
                                         android:inputType="textPersonName|numberDecimal" />
 
                                     <Button
-                                        android:id="@+id/btnGuardarDatos3"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_weight="1"
@@ -436,7 +433,7 @@
                                     android:orientation="horizontal">
 
                                     <EditText
-                                        android:id="@+id/cajaGasolinaInicial"
+                                        android:id="@+id/gasolinaInicialB2D3"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_weight="1"
@@ -445,7 +442,6 @@
                                         android:inputType="textPersonName|numberDecimal" />
 
                                     <Button
-                                        android:id="@+id/btnGuardarDatos2"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_weight="1"
@@ -462,7 +458,7 @@
                                     android:orientation="horizontal">
 
                                     <EditText
-                                        android:id="@+id/cajaGasolinaFinal"
+                                        android:id="@+id/gasolinaFinalB2D3"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_weight="1"
@@ -471,7 +467,6 @@
                                         android:inputType="textPersonName|numberDecimal" />
 
                                     <Button
-                                        android:id="@+id/btnGuardarDatos3"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_weight="1"
@@ -522,7 +517,7 @@
                                     android:orientation="horizontal">
 
                                     <EditText
-                                        android:id="@+id/cajaGasolinaInicial"
+                                        android:id="@+id/gasolinaInicialB1D4"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_weight="1"
@@ -531,7 +526,6 @@
                                         android:inputType="textPersonName|numberDecimal" />
 
                                     <Button
-                                        android:id="@+id/btnGuardarDatos2"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_weight="1"
@@ -548,7 +542,7 @@
                                     android:orientation="horizontal">
 
                                     <EditText
-                                        android:id="@+id/cajaGasolinaFinal"
+                                        android:id="@+id/gasolinaFinalB1D4"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_weight="1"
@@ -557,7 +551,6 @@
                                         android:inputType="textPersonName|numberDecimal" />
 
                                     <Button
-                                        android:id="@+id/btnGuardarDatos3"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_weight="1"
@@ -587,7 +580,7 @@
                                     android:orientation="horizontal">
 
                                     <EditText
-                                        android:id="@+id/cajaGasolinaInicial"
+                                        android:id="@+id/gasolinaInicialB2D4"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_weight="1"
@@ -596,7 +589,6 @@
                                         android:inputType="textPersonName|numberDecimal" />
 
                                     <Button
-                                        android:id="@+id/btnGuardarDatos2"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_weight="1"
@@ -613,7 +605,7 @@
                                     android:orientation="horizontal">
 
                                     <EditText
-                                        android:id="@+id/cajaGasolinaFinal"
+                                        android:id="@+id/gasolinaFinalB2D4"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_weight="1"
@@ -622,7 +614,6 @@
                                         android:inputType="textPersonName|numberDecimal" />
 
                                     <Button
-                                        android:id="@+id/btnGuardarDatos3"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_weight="1"
