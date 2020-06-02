@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".NuevoUsuario">
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -45,7 +46,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical" >
+                    android:orientation="vertical">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -78,12 +79,25 @@
 
 
                                 <EditText
-                                    android:id="@+id/cajaApellidos"
+                                    android:id="@+id/cajaApellido1"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_margin="15dp"
                                     android:background="@drawable/texts"
-                                    android:hint="Apellidos"
+                                    android:hint="Apellido Paterno"
+                                    android:inputType="textAutoComplete"
+                                    android:padding="12dp"
+                                    android:textColor="#212121"
+                                    android:textColorHint="#A6A6A6"
+                                    android:textSize="14sp" />
+
+                                <EditText
+                                    android:id="@+id/cajaApellido2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="15dp"
+                                    android:background="@drawable/texts"
+                                    android:hint="Apellido Materno"
                                     android:inputType="textAutoComplete"
                                     android:padding="12dp"
                                     android:textColor="#212121"
@@ -91,12 +105,12 @@
                                     android:textSize="14sp" />
 
 
-                                <EditText
-                                    android:id="@+id/cajaTipoCargo"
+
+                                <Spinner
+                                    android:id="@+id/spnTipoCargos"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_margin="15dp"
-                                    android:background="@drawable/texts"
                                     android:hint="Tipo de Cargo"
                                     android:inputType="textAutoComplete"
                                     android:padding="12dp"
@@ -106,26 +120,13 @@
 
 
                                 <EditText
-                                    android:id="@+id/cajaCodigo"
+                                    android:id="@+id/cajaUsuario"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_margin="15dp"
                                     android:background="@drawable/texts"
-                                    android:hint="Código"
-                                    android:inputType="number"
-                                    android:padding="12dp"
-                                    android:textColor="#212121"
-                                    android:textColorHint="#A6A6A6"
-                                    android:textSize="14sp" />
-
-                                <EditText
-                                    android:id="@+id/cajaCorreoElectronico"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_margin="15dp"
-                                    android:background="@drawable/texts"
-                                    android:hint="Correo Electrónico"
-                                    android:inputType="textEmailAddress"
+                                    android:hint="Usuario"
+                                    android:inputType="textAutoComplete"
                                     android:padding="12dp"
                                     android:textColor="#212121"
                                     android:textColorHint="#A6A6A6"

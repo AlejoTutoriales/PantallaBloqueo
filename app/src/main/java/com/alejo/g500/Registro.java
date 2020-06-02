@@ -2,8 +2,6 @@ package com.alejo.g500;
 
 import android.os.Bundle;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -31,7 +29,6 @@ public class Registro extends AppCompatActivity {
     }
 
     private void clicks() {
-
         btnGuardar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -48,6 +45,7 @@ public class Registro extends AppCompatActivity {
                 }
             }
         });
+
 
     }
 
