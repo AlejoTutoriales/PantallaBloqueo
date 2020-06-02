@@ -37,6 +37,14 @@ dependencies {
 
     //Patrón de Bloqueo
     implementation 'com.andrognito.patternlockview:patternlockview:1.0.0'
+
+    //CardView
     implementation 'androidx.cardview:cardview:1.0.0'
 
+    //Volley
+    implementation 'com.android.volley:volley:1.1.1'
+
+
+    //Lottie
+    implementation 'com.airbnb.android:lottie:3.1.0'
 }
