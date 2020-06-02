@@ -25,8 +25,8 @@ public class Registro extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        inicializarElementos();
-        clicks();
+      //  inicializarElementos();
+        //clicks();
 
     }
 
@@ -52,9 +52,7 @@ public class Registro extends AppCompatActivity {
     }
 
     private void inicializarElementos() {
-        cajaGasolinaIncial = findViewById(R.id.cajaGasolinaInicial);
-        cajaGasolinaFinal = findViewById(R.id.cajaGasolinaFinal);
-        btnGuardar = findViewById(R.id.btnGuardarDatos);
+
 
     }
 

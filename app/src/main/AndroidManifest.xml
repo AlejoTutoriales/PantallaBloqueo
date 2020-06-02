@@ -20,7 +20,9 @@
         <activity
             android:name=".Registro"
             android:label="@string/title_activity_registro"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar" >
+
+        </activity>
         <activity android:name=".MenuOpciones" />
         <activity android:name=".MainActivity"></activity>
     </application>
