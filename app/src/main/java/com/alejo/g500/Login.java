@@ -111,5 +111,12 @@ public class Login extends AppCompatActivity {
 
     }
 
+    @Override
+    public void onBackPressed() {
+        Intent i = new Intent(Login.this, MainActivity.class);
+        i.putExtra("sesion", "1");
+        startActivity(i);
+        finish();
 
+    }
 }

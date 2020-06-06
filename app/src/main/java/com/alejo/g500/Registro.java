@@ -18,6 +18,8 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
+import java.util.Calendar;
+
 public class Registro extends AppCompatActivity implements View.OnClickListener {
 
     EditText gasolinaInicialB1D1, gasolinaFinalB1D1;
@@ -46,9 +48,13 @@ public class Registro extends AppCompatActivity implements View.OnClickListener 
     Button btnGuardarIncialBOMBA2_DES2, btnGuardarFinalBOMBA2_DES2;
 
     RequestQueue requestQueue;
-
     StringRequest stringRequest;
 
+    Calendar calendario = Calendar.getInstance();
+    int anio = calendario.get(Calendar.YEAR);
+    int mes = calendario.get(Calendar.MONTH) + 1;
+    int dia = calendario.get(Calendar.DAY_OF_MONTH);
+    final String fechaHoySistema = (dia < 10 ? "0" + dia : dia) + "/" + (mes < 10 ? "0" + mes : mes) + "/" + anio;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -93,7 +99,7 @@ public class Registro extends AppCompatActivity implements View.OnClickListener 
     @Override
     public void onClick(View v) {
 
-        String fechaHoy = "06/06/2020";
+        String fechaHoy = fechaHoySistema;
 
         switch (v.getId()) {
             //BOMBA 1

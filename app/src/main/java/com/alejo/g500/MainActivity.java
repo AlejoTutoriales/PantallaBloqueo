@@ -27,13 +27,16 @@ public class MainActivity extends AppCompatActivity {
 
         patternLockView = findViewById(R.id.bloqueoPatronView);
 
+        verificarSesion();
+
+
         final String definePatron = getIntent().getStringExtra("nuevo_patron");
 
 
         if (BaseDatos.obtenerPatron(MainActivity.this) == "null" && definePatron == null) {
             startActivity(new Intent(MainActivity.this, MenuOpciones.class));
 
-        } else if (BaseDatos.obtenerPatron(MainActivity.this) != "null" || (BaseDatos.obtenerPatron(MainActivity.this) .equals("null") && definePatron != null)) {
+        } else if (BaseDatos.obtenerPatron(MainActivity.this) != "null" || (BaseDatos.obtenerPatron(MainActivity.this).equals("null") && definePatron != null)) {
 
             patternLockView.addPatternLockListener(new PatternLockViewListener() {
                 @Override
@@ -54,11 +57,13 @@ public class MainActivity extends AppCompatActivity {
                         BaseDatos.actualizarPatron(MainActivity.this, nuevoPatron);
                         Toast.makeText(MainActivity.this, "Patron definido", Toast.LENGTH_SHORT).show();
                         pattern.clear();
+                        finish();
                         startActivity(new Intent(MainActivity.this, MenuOpciones.class));
                     } else {
                         String patronIngresado = PatternLockUtils.patternToString(patternLockView, pattern);
                         if (BaseDatos.obtenerPatron(MainActivity.this).equals(patronIngresado)) {
                             pattern.clear();
+                            finish();
                             startActivity(new Intent(MainActivity.this, MenuOpciones.class));
                             Toast.makeText(MainActivity.this, "Bienvenido!", Toast.LENGTH_SHORT).show();
 
@@ -77,5 +82,15 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
+
+    private void verificarSesion() {
+        String value = getIntent().getStringExtra("sesion") == null ? "0" : getIntent().getStringExtra("sesion");
+
+        if (value.equals("1")) {
+            finish();
+        }
+
+    }
+
 
 }
