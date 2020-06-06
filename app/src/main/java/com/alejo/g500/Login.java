@@ -78,7 +78,7 @@ public class Login extends AppCompatActivity {
                 try {
                     //CARGO UN OBJETO DE TIPO USUARIO Y SETEO LOS DATOS CONSUMIDOS POR EL WEBSERVICE
                     jsonObject = json.getJSONObject(0);
-                    Constantes.USUARIO_LOGIN.setIdUsuario(jsonObject.optString("idusuario"));
+                    Constantes.USUARIO_LOGIN.setIdUsuario(jsonObject.optString("idUsuario"));
                     Constantes.USUARIO_LOGIN.setNombre(jsonObject.optString("nombre"));
                     Constantes.USUARIO_LOGIN.setApellido1(jsonObject.optString("apellido1"));
                     Constantes.USUARIO_LOGIN.setApellido2(jsonObject.optString("apellido2"));
